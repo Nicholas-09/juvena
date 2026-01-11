@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutrition Facts — Lemonade (Allulose + Monk Fruit)</title>
+  <meta name="description" content="Nutrition label and ingredients for our organic lemonade sweetened with allulose and monk fruit." />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#101823;
+      --text:#e8eef6;
+      --muted:#9fb0c3;
+      --line:rgba(255,255,255,.12);
+      --accent:#ffd700;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(255,215,0,.12), transparent 60%),
+                  radial-gradient(900px 600px at 80% 10%, rgba(120,179,255,.10), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 14px;
+      overflow:hidden;
+    }
+    .wrap{width:min(860px, 100%); display:grid; gap:6px; max-height:calc(100vh - 20px); overflow-y:auto; box-sizing:border-box;}
+    header{
+      display:flex; align-items:flex-start; justify-content:flex-start; gap:12px;
+      padding:6px 18px 2px;
+    }
+    .brand{
+      font-weight:700; letter-spacing:.2px; font-size:18px;
+    }
+    .sub{color:var(--muted); font-size:13px; margin-top:6px; line-height:1.35}
+    .pill{
+      border:1px solid var(--line);
+      padding:8px 10px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:12px;
+      white-space:nowrap;
+      background:rgba(255,255,255,.03);
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+
+    /* Nutrition label */
+    .label{
+      background:#fff;
+      color:#111;
+      border-radius:12px;
+      margin:0 auto 6px;
+      padding:10px 12px 7px;
+      width:min(360px, 100%);
+      box-sizing:border-box;
+    }
+    .nf-title{
+      font-weight:900;
+      font-size:24px;
+      line-height:1;
+      border-bottom:6px solid #111;
+      padding-bottom:4px;
+      margin-bottom:5px;
+    }
+    .nf-row{display:flex; justify-content:space-between; gap:8px; font-size:11px; line-height:1.1}
+    .nf-muted{color:#333}
+    .rule{border-bottom:1px solid #111; margin:3px 0}
+    .rule-thick{border-bottom:4px solid #111; margin:4px 0}
+    .rule-mid{border-bottom:2px solid #111; margin:3px 0}
+    .calories{
+      display:flex; justify-content:space-between; align-items:flex-end;
+      font-weight:900;
+      margin:2px 0 1px;
+    }
+    .calories .left{font-size:16px}
+    .calories .right{font-size:30px; line-height:1}
+    .indent{padding-left:10px}
+    .indent2{padding-left:20px}
+    .dv{font-weight:700}
+    .foot{font-size:8.5px; color:#333; line-height:1.15; margin-top:4px}
+
+    /* Info section */
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:6px;
+      padding:0 18px 6px;
+    }
+    @media (max-width: 720px){ 
+      body{padding:12px 8px; height:100vh; overflow:hidden;}
+      .wrap{width:100%; gap:10px; max-height:100vh; overflow-y:auto;}
+      .card{margin:0;}
+      .label{
+        margin:0 auto 10px;
+        padding:12px 12px 10px;
+        width:calc(100% - 16px);
+        max-width:400px;
+        border-radius:12px;
+      }
+      .nf-title{
+        font-size:26px;
+        border-bottom:7px solid #111;
+        padding-bottom:5px;
+        margin-bottom:7px;
+      }
+      .nf-row{
+        font-size:11.5px;
+        gap:5px;
+        line-height:1.12;
+      }
+      .rule{margin:5px 0}
+      .rule-thick{margin:6px 0}
+      .rule-mid{margin:4px 0}
+      .calories{
+        margin:4px 0 1px;
+      }
+      .calories .left{font-size:17px}
+      .calories .right{font-size:34px}
+      .foot{font-size:9.5px; margin-top:6px}
+      .grid{grid-template-columns:1fr; padding:0 8px 10px; gap:10px;} 
+      header{flex-direction:column; padding:10px 8px 5px;} 
+      .pill{align-self:flex-start; padding:7px 9px; font-size:11.5px;}
+      .info{padding:10px; border-radius:12px;}
+      .info h3{font-size:12.5px; margin:0 0 5px;}
+      .info p{font-size:11.5px; line-height:1.35;}
+    }
+    .info{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      border-radius:12px;
+      padding:6px;
+    }
+    .info h3{margin:0 0 4px; font-size:11px; letter-spacing:.2px}
+    .info p{margin:0; color:var(--muted); font-size:10px; line-height:1.3}
+    .highlight{color:var(--accent); font-weight:650}
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <div class="pill">Serving Size: 8 fl oz (240 mL)</div>
+      </header>
+
+      <!-- Nutrition Facts Label -->
+      <div class="label" role="img" aria-label="Nutrition Facts label for lemonade with allulose and monk fruit">
+        <div class="nf-title">Nutrition Facts</div>
+
+        <div class="nf-row"><span class="dv">Serving size</span><span class="dv">8 fl oz (240 mL)</span></div>
+        <div class="nf-row nf-muted" style="margin-top:6px;">
+          <span>Servings per container</span><span>~7</span>
+        </div>
+
+        <div class="rule-thick"></div>
+
+        <div class="nf-row nf-muted"><span>Amount per serving</span><span></span></div>
+
+        <div class="calories">
+          <div class="left">Calories</div>
+          <div class="right">25</div>
+        </div>
+
+        <div class="rule-mid"></div>
+
+        <div class="nf-row nf-muted"><span></span><span class="dv">% Daily Value*</span></div>
+        <div class="rule"></div>
+
+        <div class="nf-row"><span><strong>Total Fat</strong> 0g</span><span class="dv">0%</span></div>
+        <div class="nf-row indent"><span class="nf-muted">Saturated Fat 0g</span><span class="dv">0%</span></div>
+        <div class="nf-row indent"><span class="nf-muted">Trans Fat 0g</span><span></span></div>
+        <div class="rule"></div>
+
+        <div class="nf-row"><span><strong>Cholesterol</strong> 0mg</span><span class="dv">0%</span></div>
+        <div class="rule"></div>
+
+        <div class="nf-row"><span><strong>Sodium</strong> 0mg</span><span class="dv">0%</span></div>
+        <div class="rule"></div>
+
+        <div class="nf-row"><span><strong>Total Carbohydrate</strong> 58g</span><span class="dv">21%</span></div>
+        <div class="nf-row indent"><span class="nf-muted">Dietary Fiber 0g</span><span class="dv">0%</span></div>
+        <div class="nf-row indent"><span class="nf-muted">Total Sugars 1g</span><span></span></div>
+        <div class="nf-row indent2"><span class="nf-muted">Includes 0g Added Sugars</span><span class="dv">0%</span></div>
+        <div class="rule"></div>
+
+        <div class="nf-row"><span><strong>Protein</strong> 0g</span><span></span></div>
+
+        <div class="rule-thick"></div>
+
+        <div class="nf-row"><span>Vitamin C 15mg</span><span class="dv">17%</span></div>
+        <div class="nf-row"><span>Potassium 45mg</span><span class="dv">1%</span></div>
+        <div class="nf-row"><span>Calcium 2mg</span><span class="dv">0%</span></div>
+        <div class="nf-row"><span>Folate (B9) 2mcg</span><span class="dv">1%</span></div>
+
+        <div class="foot">
+          *Percent Daily Values are based on a 2,000 calorie diet.
+          Nutrition values are estimates and can vary by fruit size, variety, and juicing method.
+        </div>
+      </div>
+
+      <!-- Additional info -->
+      <div class="grid">
+        <div class="info">
+          <h3>Ingredients</h3>
+          <p><span class="highlight">ORGANIC LEMONS</span>, <span class="highlight">SPRING WATER</span>, <span class="highlight">ALLULOSE*</span>, <span class="highlight">MONK FRUIT EXTRACT</span>.</p>
+        </div>
+
+        <div class="info" style="grid-column:1 / -1;">
+          <h3>Storage</h3>
+          <p>
+            Keep refrigerated. For best taste and freshness, consume within 3–5 days.
+            Separation is natural—shake gently before drinking.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
